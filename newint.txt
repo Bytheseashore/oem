@@ -8,27 +8,21 @@ utilsLayout = QWidget()
 utilsLayout.layout = QGridLayout()
 
 self.wallBox = QCheckBox("WallHack")
-self.wallBox.stateChanged.connect(lambda state, type="glow": self.cheatTread.enableFeature(state, type))
 utilsLayout.layout.addWidget(self.wallBox, 0,1)
 
 self.aimBox = QCheckBox("AimBot")
-self.aimBox.stateChanged.connect(lambda state, type="aimEnabled": self.aimThread.enableFeature(state, type))
 utilsLayout.layout.addWidget(self.aimBox, 0,0)
 
 self.trigBox = QCheckBox("TriggerBot")
-self.trigBox.stateChanged.connect(lambda state, type="trigger": self.cheatTread.enableFeature(state, type))
 utilsLayout.layout.addWidget(self.trigBox, 2,0)
 
 self.flashBox = QCheckBox("NoFlash")
-self.flashBox.stateChanged.connect(lambda state, type="flsh": self.cheatTread.enableFeature(state, type))
 utilsLayout.layout.addWidget(self.flashBox, 2,1)
 
 self.chamsBox = QCheckBox("Chams")
-self.chamsBox.stateChanged.connect(lambda state, type="chams": self.cheatTread.enableFeature(state, type))
 utilsLayout.layout.addWidget(self.chamsBox, 1,1)
 
 self.rcsBox = QCheckBox("AutoSpray")
-self.rcsBox.stateChanged.connect(lambda state, type="rcsEnabled": self.aimThread.enableFeature(state, type))
 utilsLayout.layout.addWidget(self.rcsBox, 1,0)
 
 utilsLayout.layout.setSpacing(0)
