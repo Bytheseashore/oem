@@ -132,7 +132,7 @@ self.mainTabs.setTabPosition(QTabWidget.West)
 
 logolay = QVBoxLayout()
 self.discord = QPushButton("JOIN US ON DISCORD")
-self.discord.setStyleSheet('QPushButton {background-color: #7289d9; color: white;}'
+self.discord.setStyleSheet('QPushButton {background-color: #7289d9; color: white;}')
 self.discord.setStyleSheet('QPushButton:pressed {background-color: #566cb8;}')
 self.discord.clicked.connect(self.discordServer)
 logolay.addWidget(self.discord)
