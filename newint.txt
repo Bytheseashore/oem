@@ -1,9 +1,3 @@
-self.cheatTread = CheatThread()
-self.cheatTread.start()
-
-self.aimThread = AimThread()
-self.aimThread.start()
-
 utilsLayout = QWidget()
 utilsLayout.layout = QGridLayout()
 
