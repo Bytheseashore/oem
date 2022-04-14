@@ -55,12 +55,12 @@ wallColLay.addWidget(QLabel("CHAMS"))
 wallColLay.addWidget(self.Cbutton)
 wallColLay.setSpacing(20)
 self.wallGroup.setLayout(wallColLay)
-        
+
 self.wallTab = QWidget()
 self.wallTab.layout = QVBoxLayout()
 self.wallTab.layout.addWidget(self.wallGroup)
 self.wallTab.setLayout(self.wallTab.layout)
-        
+
 self.SuperL = QRadioButton("Super Legit")
 self.SuperL.setDisabled(True)
 self.SuperL.setChecked(True)
