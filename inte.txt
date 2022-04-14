@@ -112,7 +112,7 @@ self.flashTab = QWidget()
 self.flashTab.layout = QVBoxLayout()
 self.flashTab.layout.addWidget(self.flashGroup)
 self.flashTab.setLayout(self.flashTab.layout)
-        
+
 self.tabs = QTabWidget()
 self.tabs.addTab(self.wallTab,"Wall/Chams")
 self.tabs.addTab(self.aimTab,"AimBot")
