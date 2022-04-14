@@ -8,7 +8,7 @@ utilsLayout = QWidget()
 utilsLayout.layout = QGridLayout()
 
 self.wallBox = QCheckBox("WallHack")
-self.wallBox.stateChanged.connect(self.toogle_wall)
+self.wallBox.stateChanged.connect(lambda state, type="glow": self.enableFeature(type)
 utilsLayout.layout.addWidget(self.wallBox, 0,1)
 
 self.aimBox = QCheckBox("AimBot")
