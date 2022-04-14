@@ -52,11 +52,11 @@ self.wallTab.setLayout(self.wallTab.layout)
 self.SuperL = QRadioButton("Super Legit")
 self.SuperL.setDisabled(True)
 self.SuperL.setChecked(True)
-self.SuperL.toggled.connect(self.aimMode)
+self.SuperL.toggled.connect(self.aimLegit)
 
 self.Legit = QRadioButton("Legit")
 self.Legit.setDisabled(True)
-self.Legit.toggled.connect(self.aimMode)
+self.Legit.toggled.connect(self.aimSuper)
 
 aimModeLay = QHBoxLayout()
 self.aimMode = QGroupBox("Aim Modes")
